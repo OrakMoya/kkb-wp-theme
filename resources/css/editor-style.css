@@ -33,10 +33,12 @@
     padding: 0 0 0 40px;
   }
 
-  li {
-    list-style: inherit;
-    list-style-type: inherit;
-    list-style-position: inherit;
+  ul li:not(.wp-block-post) {
+    list-style: disc;
+  }
+
+  ol li:not(.wp-block-post) {
+    list-style: decimal;
   }
 }
 
