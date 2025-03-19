@@ -44,6 +44,6 @@
   @apply !text-neutral-400;
 }
 
-.is-root-container {
+.post-type-page .is-root-container {
   @apply border-y-[1px] border-neutral-600;
 }
