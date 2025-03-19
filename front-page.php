@@ -96,7 +96,7 @@ $imgs_dir = get_bloginfo('stylesheet_directory') . '/images/';
 			</div>
 		<?php else: ?>
 			<div class="mt-48">
-				<div class="container">
+				<div class="container mx-auto">
 					<?php get_template_part('template-parts/content', 'single'); ?>
 				</div>
 			</div>

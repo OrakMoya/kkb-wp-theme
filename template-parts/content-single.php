@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header mb-4">
-		<?php the_title(sprintf('<h1 class="entry-title text-2xl lg:text-5xl font-extrabold leading-tight mb-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h1>'); ?>
+		<?php the_title(sprintf('<h1 class="entry-title text-center text-2xl lg:text-5xl font-extrabold leading-tight mb-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h1>'); ?>
 
 		<?php if (!is_front_page()): ?>
 			<span class="text-neutral-500"><?= get_the_author() ?>, <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class=""><?php echo get_the_date(); ?></time></span>
