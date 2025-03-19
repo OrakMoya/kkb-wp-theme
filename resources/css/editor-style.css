@@ -17,4 +17,13 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  body{
+    background: var(--color-neutral-900) !important;
+    color: white;
+  }
+
+  .editor-post-title{
+    @apply mb-8 px-8 text-2xl lg:text-5xl font-extrabold leading-tight ;
+  }
 }

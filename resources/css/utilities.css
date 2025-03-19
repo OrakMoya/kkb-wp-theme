@@ -1,7 +1,7 @@
 @utility container {
     max-width: var(--wp--style--global--wide-size);
 }
-
+/*
 @utility alignfull {
     width: 100vw;
     margin: 0 calc(50% - 50vw) !important;
@@ -27,3 +27,4 @@
 @utility aligncenter {
     margin: 0.5rem auto !important;
 }
+*/
