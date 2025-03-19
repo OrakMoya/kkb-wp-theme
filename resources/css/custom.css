@@ -38,8 +38,8 @@ img {
         @apply mb-8;
     }
 
-    ul:not(.block-editor-block-variation-picker__variations):not(.wp-block-post) {
-        li {
+    ul:not(.block-editor-block-variation-picker__variations) {
+        li:not(.wp-block-post) {
             @apply list-disc list-inside;
         }
     }
