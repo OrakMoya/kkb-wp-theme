@@ -3,7 +3,7 @@
 		<?php the_title(sprintf('<h1 class="entry-title text-2xl lg:text-5xl font-extrabold leading-tight mb-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h1>'); ?>
 
 		<?php if (!is_front_page()): ?>
-			<span class="text-neutral-500"><?= get_the_author() ?>, <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="text-sm text-neutral-500"><?php echo get_the_date(); ?></time></span>
+			<span class="text-neutral-500"><?= get_the_author() ?>, <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class=""><?php echo get_the_date(); ?></time></span>
 		<?php endif; ?>
 	</header>
 

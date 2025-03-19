@@ -17,7 +17,7 @@
 						),
 						'</a></h2>'
 					); ?>
-					<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="text-neutral-400 text-sm"><?php echo get_the_date(); ?></time>
+					<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="text-neutral-500"><?php echo get_the_date(); ?></time>
 				</div>
 			</header>
 
