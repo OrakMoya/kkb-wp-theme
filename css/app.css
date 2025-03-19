@@ -1106,7 +1106,7 @@
       }
       margin-bottom: calc(var(--spacing) * 8);
     }
-    ul:not(.block-editor-block-variation-picker__variations) {
+    ul:not(.block-editor-block-variation-picker__variations):not(.wp-block-post) {
       li {
         list-style-position: inside;
         list-style-type: disc;
