@@ -1097,6 +1097,14 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  ul, ol {
+    padding: 0 0 0 40px;
+  }
+  li {
+    list-style: inherit;
+    list-style-type: inherit;
+    list-style-position: inherit;
+  }
 }
 @property --tw-scale-x {
   syntax: "*";

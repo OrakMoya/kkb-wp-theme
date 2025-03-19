@@ -24,31 +24,24 @@ img {
         @apply text-lg;
     }
 
+
     p,
     ul,
     ol {
-        a {
-            @apply text-blue-500 underline;
-
-            &:hover {
-                @apply no-underline;
-            }
-        }
-
         @apply mb-8;
     }
 
-    ul:not(.block-editor-block-variation-picker__variations) {
-        li:not(.wp-block-post) {
-            @apply list-disc list-inside;
-        }
+    ul,
+    ol {
+        padding: 0 0 0 40px;
     }
 
-    ol {
-        li {
-            @apply list-decimal list-inside;
-        }
+    li {
+        list-style: inherit;
+        list-style-type: inherit;
+        list-style-position: inherit;
     }
+
 }
 
 .wp-element-caption {

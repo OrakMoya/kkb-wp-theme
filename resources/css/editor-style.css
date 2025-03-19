@@ -26,4 +26,14 @@
   .editor-post-title{
     @apply mb-8 px-8 text-2xl lg:text-5xl font-extrabold leading-tight ;
   }
+
+  ul, ol{
+    padding: 0 0 0 40px;
+  }
+
+  li{
+    list-style: inherit;
+    list-style-type: inherit;
+    list-style-position: inherit;
+  }
 }
