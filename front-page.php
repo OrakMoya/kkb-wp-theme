@@ -85,7 +85,7 @@ $imgs_dir = get_bloginfo('stylesheet_directory') . '/images/';
 										<?= get_the_author() ?>
 									</a> - <?= get_the_date() ?>
 								</p>
-								<p class="drop-shadow-md mb-2"> <?= wp_trim_words(get_the_excerpt(), 40, '...') ?> </p>
+								<p class="drop-shadow-md mb-2 mx-2 border-l-2 border-neutral-500 pl-3"> <?= wp_trim_words(get_the_excerpt(), 30, '...') ?> </p>
 								<a class="text-sm text-neutral-500 hover:text-white transition group" href="<?= get_permalink() ?>">Read more <span class="transition-all relative ml-2 right-2 scale-75 opacity-0 group-hover:opacity-100 group-hover:right-0 group-hover:scale-100">></span> </a>
 							</div>
 						</div>
