@@ -10,6 +10,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -18,22 +19,31 @@
     border-color: var(--color-gray-200, currentColor);
   }
 
-  body{
+  body {
     background: var(--color-neutral-900) !important;
     color: white;
   }
 
-  .editor-post-title{
-    @apply mb-8 px-8 text-2xl lg:text-5xl font-extrabold leading-tight ;
+  .editor-post-title {
+    @apply mb-8 px-8 text-2xl lg:text-5xl font-extrabold leading-tight;
   }
 
-  ul, ol{
+  ul,
+  ol {
     padding: 0 0 0 40px;
   }
 
-  li{
+  li {
     list-style: inherit;
     list-style-type: inherit;
     list-style-position: inherit;
   }
+}
+
+.wp-element-caption {
+  @apply !text-neutral-400;
+}
+
+.is-root-container {
+  @apply border-y-[1px] border-neutral-600;
 }
