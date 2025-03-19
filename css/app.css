@@ -6,7 +6,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-blue-500: oklch(0.623 0.214 259.815);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-500: oklch(0.551 0.027 264.364);
     --color-gray-800: oklch(0.278 0.033 256.848);
@@ -1082,42 +1081,6 @@
   img {
     width: 100%;
     height: auto;
-  }
-  .entry-content, .block-editor-block-list__layout {
-    h1 {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-    h2 {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-    h3 {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-    p, ul, ol {
-      a {
-        color: var(--color-blue-500);
-        text-decoration-line: underline;
-        &:hover {
-          text-decoration-line: none;
-        }
-      }
-      margin-bottom: calc(var(--spacing) * 8);
-    }
-    ul:not(.block-editor-block-variation-picker__variations) {
-      li:not(.wp-block-post) {
-        list-style-position: inside;
-        list-style-type: disc;
-      }
-    }
-    ol {
-      li {
-        list-style-position: inside;
-        list-style-type: decimal;
-      }
-    }
   }
   .wp-element-caption {
     color: var(--color-neutral-400) !important;
