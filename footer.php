@@ -16,21 +16,24 @@
 			<p class="text-sm text-neutral-500"><?php echo get_bloginfo('description'); ?> </p>
 		</div>
 		<div class="w-full justify-center sm:justify-end flex sm:flex-row gap-x-6 sm:gap-x-12 sm:pr-4">
-			<div class="w-full sm:w-fit min-w-fit text-right sm:text-left">
-				<h3 class="sm:text-lg font-bold mb-1">Društvene mreže</h3>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'footer-socials',
-						'container_id'    => 'footer-socials-menu',
-						'container_class' => '',
-						'menu_class'      => '',
-						'li_class'        => 'text-sm sm:text-base capitalize hover:font-bold focus:font-bold hover:cursor-pointer',
-						'fallback_cb'     => false,
-					)
-				);
-				?>
-			</div>
+			<?php if (has_nav_menu('footer-socials')) : ?>
+				<div class="w-full sm:w-fit min-w-fit text-right sm:text-left">
+					<h3 class="sm:text-lg font-bold mb-1">Društvene mreže</h3>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'footer-socials',
+							'container_id'    => 'footer-socials-menu',
+							'container_class' => '',
+							'menu_class'      => '',
+							'li_class'        => 'text-sm sm:text-base capitalize hover:font-bold focus:font-bold hover:cursor-pointer',
+							'fallback_cb'     => false,
+						)
+					);
+					?>
+				</div>
+			<?php endif; ?>
+			<?php if (has_nav_menu('footer-info')) : ?>
 			<div class="w-full min-w-fit md:w-fit">
 				<h3 class="sm:text-lg font-bold mb-1">Informacije</h3>
 				<?php
@@ -46,6 +49,7 @@
 				);
 				?>
 			</div>
+			<?php endif; ?>
 		</div>
 	</div>
 

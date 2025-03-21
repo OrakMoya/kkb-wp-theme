@@ -58,6 +58,54 @@ function add_frontpage_options(WP_Customize_Manager $wp_customize)
 
 		)
 	);
+
+	// Control for saturation
+	$wp_customize->add_setting(
+		'kkb_frontpage_landing_image_saturation',
+		array(
+			'default'           => 100,
+			'sanitize_callback' => 'sanitize_text_field',
+			'transport'         => 'refresh',
+		)
+	);
+	$wp_customize->add_control(
+		'kkb_frontpage_landing_image_saturation',
+		array(
+			'type' => 'range',
+			'section' => 'kkb_frontpage_options',
+			'label' => 'Frontpage Image Saturation',
+			'input_attrs' => array(
+				'min' => 0,
+				'max' => 120,
+				'step' => 1
+			)
+
+		)
+	);
+
+	// Control for blur
+	$wp_customize->add_setting(
+		'kkb_frontpage_landing_image_blur',
+		array(
+			'default'           => 0,
+			'sanitize_callback' => 'sanitize_text_field',
+			'transport'         => 'refresh',
+		)
+	);
+	$wp_customize->add_control(
+		'kkb_frontpage_landing_image_blur',
+		array(
+			'type' => 'range',
+			'section' => 'kkb_frontpage_options',
+			'label' => 'Frontpage Image Blur',
+			'input_attrs' => array(
+				'min' => 0,
+				'max' => 20,
+				'step' => 1
+			)
+
+		)
+	);
 }
 
 function add_home_options(WP_Customize_Manager $wp_customize){
