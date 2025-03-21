@@ -8,16 +8,16 @@
 		</a>
 		<div class=" w-full px-6 py-4 mb-2">
 			<a href="<?= get_permalink() ?>">
-				<h2 class="drop-shadow-md text-2xl font-bold"><?= the_title() ?></h2>
+				<h2 class="drop-shadow-md text-2xl font-bold leading-7"><?= the_title() ?></h2>
 			</a>
 
-			<p class="text-neutral-500 text-sm">
+			<p class="text-neutral-500 text-sm mt-1">
 				<a href="<?= esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>" class="hover:text-white transition">
 					<?= get_the_author() ?>
 				</a> - <?= get_the_date() ?>
 			</p>
-			<p class="drop-shadow-md py-2"> <?= wp_trim_words(get_the_excerpt(), 30, '...') ?> </p>
-			<a class="text-sm text-neutral-500 hover:text-white transition group" href="<?= get_permalink() ?>">Read more <span class="transition-all relative ml-2 right-2 scale-75 opacity-0 group-hover:opacity-100 group-hover:right-0 group-hover:scale-100">></span> </a>
+			<p class="drop-shadow-md pb-2 pt-1"> <?= wp_trim_words(get_the_excerpt(), 30, '...') ?> </p>
+			<a class="text-sm text-neutral-500 hover:text-white transition group" href="<?= get_permalink() ?>">Read more <span class="transition-all font-extrabold relative ml-1 right-2 opacity-0 group-hover:opacity-100 group-hover:right-0 ">></span> </a>
 		</div>
 	</div>
 </div>
